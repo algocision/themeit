@@ -1,10 +1,12 @@
 import '../src/styles/globals.css';
 import type { AppProps } from 'next/app';
-
-// import App from './App';
+ 
 import { Provider, useSelector } from 'react-redux';
+// @ts-ignore
 import { createStore, applyMiddleware } from 'redux';
+// @ts-ignore
 import { composeWithDevTools } from 'redux-devtools-extension';
+// @ts-ignore
 import thunkMiddleware from 'redux-thunk';
 import { rootReducer, rootState } from '../src/state/reducers';
 import { ThemeProvider } from '@mui/material';
